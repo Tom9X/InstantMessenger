@@ -127,5 +127,34 @@ public class Server extends JFrame {
         }
     }
 
+    //updates chat window
+    private void showMessage(final String text) {
 
+        SwingUtilities.invokeLater( // this updates a small portion of GUI to show message
+                new Runnable() {
+
+            public void run() {
+
+                chatWindow.append(text);
+
+
+            }
+        });
+    }
+
+    //let the user type text into their box; when true user is able to type
+    private void ableToType(final boolean tof) {
+
+        SwingUtilities.invokeLater( // this updates a small portion of GUI to show message
+                new Runnable() {
+
+            public void run() {
+
+                userText.setEditable(tof);
+
+
+            }
+        });
+
+    }
 }

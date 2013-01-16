@@ -1,5 +1,8 @@
-package buckyintermediate;
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package instantmessenger;
 import java.io.*;
 import java.net.*;
 import java.awt.*;
@@ -22,7 +25,7 @@ public class Server extends JFrame {
     //constructor
     public Server() {
 
-        super("Pauly G's Instant Messenger");
+        super("Paul's Instant Messenger");
         userText = new JTextField();
         userText.setEditable(false);  //doesn't allow user to type while they are not connected to anyone
         userText.addActionListener(
